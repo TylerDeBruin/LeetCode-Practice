@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/DynamicProgramming/obj
+/DynamicProgramming/bin/Debug/net8.0
