@@ -4,6 +4,10 @@ namespace TestProject1
 {
     public class Solution
     {
+
+        //Store the last index of every char in the input
+        //Iterate through each letter at the start - if the last index matches the current position return
+        //Otherwise if the current character's index is further than the furthest tracked, update and proceed.
         public List<int> PartitionLabels(string s)
         {
             var encounteredDictionary = new Dictionary<char, int>();

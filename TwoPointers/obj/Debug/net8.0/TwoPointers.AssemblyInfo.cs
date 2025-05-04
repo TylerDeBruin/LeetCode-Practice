@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoPointers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+050d689e42e0da08854a7ac93e1e40065e79f9c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7f180dc6300c77eae7fa57a2f59fbc8d753637c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoPointers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoPointers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
