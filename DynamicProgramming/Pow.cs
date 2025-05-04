@@ -2,6 +2,7 @@ namespace DynamicProgramming
 {
     public class Solution
     {
+        //https://neetcode.io/problems/pow-x-n
         //Take n, divide it by half - and throw away half the work. 
         //Round the result to match the expected.
         public double MyPow(double x, int n)

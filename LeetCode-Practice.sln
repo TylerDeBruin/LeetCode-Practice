@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPointers", "TwoPointers\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{47C3686B-72B5-4CFE-9B4E-3E4F1020F3D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitManipulation", "BitManipulation\BitManipulation.csproj", "{D55A18F9-D90C-4EF4-BAA4-AA557487DEF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{47C3686B-72B5-4CFE-9B4E-3E4F1020F3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C3686B-72B5-4CFE-9B4E-3E4F1020F3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C3686B-72B5-4CFE-9B4E-3E4F1020F3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55A18F9-D90C-4EF4-BAA4-AA557487DEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55A18F9-D90C-4EF4-BAA4-AA557487DEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55A18F9-D90C-4EF4-BAA4-AA557487DEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55A18F9-D90C-4EF4-BAA4-AA557487DEF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
