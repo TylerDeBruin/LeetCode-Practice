@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 
 namespace TestProject1
 {
-    public class Solution
+    public class PartitionLabelsSolution
     {
 
         //https://neetcode.io/problems/partition-labels

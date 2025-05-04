@@ -1,6 +1,6 @@
 namespace DynamicProgramming
 {
-    public class Solution
+    public class MyPowSolution
     {
         //https://neetcode.io/problems/pow-x-n
         //Take n, divide it by half - and throw away half the work. 
