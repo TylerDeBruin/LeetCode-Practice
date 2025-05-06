@@ -1,7 +1,7 @@
 using System.Numerics;
 using System.Text;
 
-namespace BitManipulation.BitManipulation
+namespace NeetCode.LinkedList
 {
     public class ListNode
     {

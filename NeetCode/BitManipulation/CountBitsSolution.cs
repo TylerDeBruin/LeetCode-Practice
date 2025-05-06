@@ -2,7 +2,7 @@ using System.Numerics;
 using System.Runtime.Intrinsics.Arm;
 using ExpectedObjects;
 
-namespace BitManipulation.BitManipulation
+namespace NeetCode.BitManipulation
 {
     public class CountBitsSolution
     {

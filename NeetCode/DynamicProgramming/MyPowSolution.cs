@@ -1,4 +1,4 @@
-namespace DynamicProgramming
+namespace NeetCode.DynamicProgramming
 {
     public class MyPowSolution
     {

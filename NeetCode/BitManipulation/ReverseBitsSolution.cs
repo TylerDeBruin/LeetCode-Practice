@@ -1,8 +1,8 @@
 using System.Numerics;
 
-namespace BitManipulation.BitManipulation
+namespace NeetCode.BitManipulation
 {
-    public class AddTwoNumbers
+    public class ReverseBitsSolution
     {
         //https://neetcode.io/problems/reverse-bits
         //Iterate through the n value, checking if the bits are set

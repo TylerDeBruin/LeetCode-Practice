@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace TestProject1
+namespace NeetCode.TwoPointers
 {
     public class PartitionLabelsSolution
     {
