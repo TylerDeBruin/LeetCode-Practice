@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using ExpectedObjects;
 
-namespace NeetCode.LinkedList
+namespace NeetCode.MergeKListsSolution
 {
     public class ListNode
     {
