@@ -1,9 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using ExpectedObjects;
-using NeetCode.LinkedList;
 
-namespace NeetCode
+namespace NeetCode.LinkedList
 {
     public class ListNode
     {
