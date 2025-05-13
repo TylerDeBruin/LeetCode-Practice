@@ -36,28 +36,5 @@ namespace NeetCode.Arrays
 
             return result;
         }
-
-
-        [Fact]
-        public void Test1()
-        {
-            var s = "racecar";
-            var t = "carrace";
-
-            var actual = IsAnagram(s, t);
-
-            Assert.True(actual);
-        }
-
-        [Fact]
-        public void Test2()
-        {
-            var s = "jar";
-            var t = "jam";
-
-            var actual = IsAnagram(s, t);
-
-            Assert.False(actual);
-        }
     }
 }
