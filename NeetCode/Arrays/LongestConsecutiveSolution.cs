@@ -17,7 +17,7 @@ namespace NeetCode.Arrays
                 if(!lookup.ContainsKey(i))
                 {
                     lookup.Add(i, 1);
-            }
+                }
             }
 
             foreach (int i in lookup.Keys)
@@ -31,17 +31,12 @@ namespace NeetCode.Arrays
                     lookup[i]++;
 
                     keyToCheck += 1;
+                }
             }
-
-            return max;
-        }
 
             var resultList = lookup.OrderByDescending(x => x.Value).ToList().FirstOrDefault().Value;
 
             return resultList;
         }
     }
-
-
-
 }
