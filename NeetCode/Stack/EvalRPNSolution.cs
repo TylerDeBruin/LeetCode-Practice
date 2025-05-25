@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Threading.Tasks;
 
-namespace NeetCode.TwoPointers
+namespace NeetCode.Stack
 {
     public class EvalRPNSolution
     {
