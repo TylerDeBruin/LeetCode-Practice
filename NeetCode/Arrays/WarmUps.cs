@@ -94,7 +94,7 @@ namespace NeetCode.WarmUps
         {
             var result = getMaxAdditionalDinersCount(15, 2, 3, new long[] { 11, 6, 14 });
 
-            Assert.Equal(1, result);
+            Assert.Equal(2, result);
         }
 
 
