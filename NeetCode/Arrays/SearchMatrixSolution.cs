@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NeetCode.Arrays
+﻿namespace NeetCode.Arrays
 {
     public class SearchMatrixSolution
     {
+        //https://leetcode.com/problems/search-a-2d-matrix/description/
+        //Binary Search the first column. The binary search is capturing the index of the row 1 above
+        //the row the element is actually contained in, so left -1 must be applied to find the actual row.
         public bool SearchMatrix(int[][] matrix, int target)
         {
             var firstRowItem = new List<int>();

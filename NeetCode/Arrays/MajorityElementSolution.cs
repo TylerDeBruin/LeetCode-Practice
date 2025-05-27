@@ -12,6 +12,7 @@ namespace NeetCode.Arrays
     {
         public int MajorityElement(int[] nums)
         {
+            //Add all the elements to a dictionary.
             var lookup = new Dictionary<int, int>();
 
             foreach (var element in nums)
@@ -26,6 +27,7 @@ namespace NeetCode.Arrays
                 }
             }
 
+            //Return the one with the highest value.
             return lookup.OrderByDescending(x => x.Value).First().Key;
         }
     }

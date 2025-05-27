@@ -2,7 +2,6 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Metrics;
 using ExpectedObjects;
-using NeetCode.LinkedList;
 
 namespace NeetCode.Arrays
 {
@@ -67,8 +66,6 @@ namespace NeetCode.Arrays
                 }
 
             }
-
-
         }
 
 

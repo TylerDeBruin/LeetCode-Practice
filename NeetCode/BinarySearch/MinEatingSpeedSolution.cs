@@ -5,7 +5,8 @@ namespace NeetCode.BinarySearch
 {
     public class MinEatingSpeedSolution
     {
-        //https://neetcode.io/problems/eating-bananas
+        //https://leetcode.com/problems/koko-eating-bananas/submissions/1645520947/
+        //Simplified - Binary search the rate at which bananas can be eaten.
         //Piles is the Piles of bananas, of size i_th - While h is the number of hours to eat the bananas.
         public int MinEatingSpeed(int[] piles, int h)
         {
@@ -17,28 +18,26 @@ namespace NeetCode.BinarySearch
 
             //Minimize the value K;
             //Assume the default rate 0;
-            var result = int.MaxValue;
+            var result = right;
 
             while (left <= right)
             {
-                var midPoint = (int)Math.Floor(((double)right + left) / 2);
+                int mid = (left + right) / 2;
+                long totalHours = 0;
 
-                var totalHours = 0;
-                for (int i = 0; i < piles.Length; i++)
+                foreach (int pile in piles)
                 {
-                    totalHours += (int)Math.Ceiling((double)piles[i] / midPoint);
+                    totalHours += ((long)pile + mid - 1) / mid; // Ceiling without using Math
                 }
 
-                //If the total hours it takes exceeds the max or matches, increment the low end.
                 if (totalHours <= h)
                 {
-                    right = midPoint - 1;
-
-                    result = Math.Min(result, midPoint);
+                    result = mid;
+                    right = mid - 1;
                 }
                 else
                 {
-                    left = midPoint+1;
+                    left = mid + 1;
                 }
             }
 

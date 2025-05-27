@@ -10,6 +10,8 @@ namespace NeetCode.Arrays
 {
     public class ProductExceptSelfSolution
     {
+        //https://leetcode.com/problems/product-of-array-except-self/description/
+        //Watch for edge cases around zero.
         public int[] ProductExceptSelf(int[] nums)
         {
             var multiplicationResult = 1;

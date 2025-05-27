@@ -17,8 +17,12 @@ namespace NeetCode.Arrays
             k = k % nums.Length;
 
             //Reverse the whole array
+            //[1,2,3,4,5] Rotated by 2 becomes [4, 5, 1, 2, 3]
+            //-> [5,4,3,2,1]
             ReverseInPlace(nums, 0, nums.Length - 1);
+            //->[4,5,3,2,1]
             ReverseInPlace(nums, 0, k - 1);
+            //->[4,5,1,2,3]
             ReverseInPlace(nums, k, nums.Length - 1);
         }
 

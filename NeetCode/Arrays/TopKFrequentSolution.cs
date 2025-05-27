@@ -9,6 +9,7 @@ namespace NeetCode.Arrays
 {
     public class TopKFrequentSolution
     {
+        //https://leetcode.com/problems/top-k-frequent-elements/description/
         public int[] TopKFrequent(int[] nums, int k)
         {
             var lookup = new Dictionary<int, int>();

@@ -8,9 +8,9 @@ namespace NeetCode.Arrays
 {
     public class TwoSumSolution
     {
+        //https://leetcode.com/problems/two-sum/description/
         public int[] TwoSum(int[] nums, int target)
         {
-
             var lookup = new Dictionary<int, int>();
 
             for (int i = nums.Length-1; i >= 0; i--)

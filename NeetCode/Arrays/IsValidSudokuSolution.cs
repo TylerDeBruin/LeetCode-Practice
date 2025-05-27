@@ -7,31 +7,25 @@ using System.Diagnostics.Metrics;
 
 namespace NeetCode.Arrays
 {
+    //https://leetcode.com/problems/valid-sudoku/
     public class IsValidSudokuSolution
     {
         public bool IsValidSudoku(char[][] board)
         {
-            for (int i = 0; i < board.Length; i++) 
+            for (int i = 0; i < board.Length; i++)
             {
-                if(!ValidRow(i, board))
+                if (!ValidRow(i, board) || !ValidColumn(i, board))
                     return false;
             }
 
-            for (int j = 0; j < board.Length; j++)
+            for (int i = 0; i < board.Length; i += 3)
             {
-                if (!ValidColumn(j, board))
-                    return false;
-            }
-
-            for(int i = 1;  i < board.Length; i+=3)
-            {
-                for (int j = 1; i < board.Length; i += 3)
+                for (int j = 0; j < board[0].Length; j += 3)
                 {
                     if (!ValidSquare(i, j, board))
                         return false;
                 }
             }
-
 
             return true;
         }
@@ -40,12 +34,11 @@ namespace NeetCode.Arrays
         {
             var hashSet = new HashSet<char>();
 
-            for (int i = x - 1; i <= x + 1; i++)
+            for (int i = x; i < x + 3; i++)
             {
-                for (int j = y - 1; j <= y + 1; j++)
+                for (int j = y; j < y + 3; j++)
                 {
-                    var character = board[j][i];
-
+                    char character = board[i][j];
                     if (character != '.' && !hashSet.Add(character))
                         return false;
                 }
@@ -58,9 +51,10 @@ namespace NeetCode.Arrays
         {
             var hashSet = new HashSet<char>();
 
-            for (int i = 0; i < board[0].Length; i++)
+            for (int i = 0; i < board.Length; i++)
             {
-                if(board[i][x] != '.' && !hashSet.Add(board[i][x]) )
+                char ch = board[i][x];
+                if (ch != '.' && !hashSet.Add(ch))
                     return false;
             }
 
@@ -73,7 +67,8 @@ namespace NeetCode.Arrays
 
             for (int i = 0; i < board[0].Length; i++)
             {
-                if (board[y][i] != '.' && !hashSet.Add(board[y][i]))
+                char ch = board[y][i];
+                if (ch != '.' && !hashSet.Add(ch))
                     return false;
             }
 

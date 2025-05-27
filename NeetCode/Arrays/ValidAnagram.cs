@@ -8,6 +8,7 @@ namespace NeetCode.Arrays
 {
     public class TwoArraysSolution
     {
+        //https://leetcode.com/problems/valid-anagram/
         public bool IsAnagram(string s, string t)
         {
             if (s.Length != t.Length) return false;

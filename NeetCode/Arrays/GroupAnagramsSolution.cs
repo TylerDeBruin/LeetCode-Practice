@@ -9,7 +9,8 @@ namespace NeetCode.Arrays
 {
     public class GroupAnagramsSolution
     {
-        public List<List<string>> GroupAnagrams(string[] strs)
+        //https://leetcode.com/problems/group-anagrams/
+        public IList<IList<string>> GroupAnagrams(string[] strs)
         {
             var lookup = new Dictionary<string, List<string>>();
 
@@ -27,7 +28,7 @@ namespace NeetCode.Arrays
                 }
             }
 
-            var result = new List<List<string>>();
+            var result = new List<IList<string>>();
 
             foreach (string str in lookup.Keys)
             {
