@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NeetCode.HashTable
+namespace NeetCode.Meta
 {
     public class IntToRomanSolution
     {

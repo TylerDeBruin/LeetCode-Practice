@@ -5,7 +5,7 @@ using System.Globalization;
 using ExpectedObjects;
 using NeetCode.LinkedList;
 
-namespace NeetCode.Arrays
+namespace NeetCode.Meta
 {
     public class GroupAnagramsSolution
     {

@@ -4,7 +4,7 @@ using ExpectedObjects;
 
 namespace NeetCode.GraphTraversal
 {
-    public class SubsetsSolution
+    public class LongestPalindrome
     {
         //https://neetcode.io/problems/subsets
         //2^n amount of subsets, where n is the length of the subset

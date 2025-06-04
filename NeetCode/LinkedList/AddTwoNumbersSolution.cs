@@ -16,23 +16,96 @@ namespace NeetCode.LinkedList
 
     public class AddTwoNumbersSolution
     {
-        //https://neetcode.io/problems/add-two-numbers
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            var currentNodeL1 = TraverseList(l1);
-            var currentNodeL2 = TraverseList(l2);
-            //579
-            var resultNumber = currentNodeL1 + currentNodeL2;
-            //5,7,9
-            var resultChartacters = resultNumber.ToString().ToCharArray();
+            var numberOne = new List<int>();
+            ListNode node = l1;
+            while (node != null)
+            {
+                numberOne.Add(node.val);
+                node = node.next;
+            }
 
-            //
-            var resultArray = resultChartacters.Reverse().Select(x => int.Parse(x.ToString())).ToArray();
+            var numberTwo = new List<int>();
+            node = l2;
+            while (node != null)
+            {
+                numberTwo.Add(node.val);
+                node = node.next;
+            }
 
-            var result = CreateLinkedList(resultArray);
+            var result = new List<int>();
+            var carry = 0;
+            for (int i = 0; i < Math.Max(numberOne.Count, numberTwo.Count); i++)
+            {
+                var sumOne = 0;
+                if(i < numberOne.Count)
+                {
+                    sumOne = numberOne[i];
+                }
 
-            return result;
+                var sumTwo = 0;
+                if (i < numberTwo.Count)
+                {
+                    sumTwo = numberTwo[i];
+                }
+
+                var total = (sumOne + sumTwo + carry);
+                carry = 0;
+                if(total > 9)
+                {
+                    carry = 1;
+                }
+
+                result.Add(total % 10);
+            }
+
+            if(carry == 1)
+            {
+                result.Add(1);
+            }
+
+            ListNode head = null;
+            node = null;
+            for(int i = 0; i < result.Count; i++)
+            {
+                if(node != null)
+                {
+                    node.next = new ListNode(result[i]);
+                    node = node.next;
+                }
+                else
+                {
+                    node = new ListNode(result[i]);
+                }
+
+                if (i == 0)
+                {
+                    head = node;
+                }
+            }
+
+
+            return head;
         }
+
+        ////https://neetcode.io/problems/add-two-numbers
+        //public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        //{
+        //    var currentNodeL1 = TraverseList(l1);
+        //    var currentNodeL2 = TraverseList(l2);
+        //    //579
+        //    var resultNumber = currentNodeL1 + currentNodeL2;
+        //    //5,7,9
+        //    var resultChartacters = resultNumber.ToString().ToCharArray();
+
+        //    //
+        //    var resultArray = resultChartacters.Reverse().Select(x => int.Parse(x.ToString())).ToArray();
+
+        //    var result = CreateLinkedList(resultArray);
+
+        //    return result;
+        //}
 
 
         private int TraverseList(ListNode listnode)
